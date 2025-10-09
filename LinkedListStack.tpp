@@ -45,11 +45,7 @@ bool LinkedListStack<T>::isEmpty() const {
 
 template <typename T>
 T LinkedListStack<T>::peek() const {
-    if (isEmpty()) {
-        throw string("peek: error, stack is empty, cannot access the top");
-    }
-
-    return top->data;
+    // TO DO: implement peek
 }
 
 template <typename T>
@@ -59,12 +55,7 @@ void LinkedListStack<T>::pop() {
 
 template <typename T>
 void LinkedListStack<T>::push(const T& elem) {
-    Node<T> *newNode = new Node<T>(elem);
-    if (this->length != 0)
-        newNode->next = top;
-
-    top = newNode;
-    this->length++;
+    // TO DO: Implement push
 }
 
 template <typename T>
