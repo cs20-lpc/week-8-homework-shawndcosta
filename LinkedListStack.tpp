@@ -3,8 +3,11 @@
 #include <vector> 
 
 template <typename T>
-LinkedListStack<T>::LinkedListStack()
-{ }
+LinkedListStack<T>::LinkedListStack() {
+    top = nullptr;
+    this->length = 0;
+}
+
 
 template <typename T>
 LinkedListStack<T>::LinkedListStack(const LinkedListStack<T>& copyObj) {
@@ -141,7 +144,7 @@ void LinkedListStack<T>::print() {
     else {
         Node<T> *curr = top;
         while (curr != nullptr){
-            cout <<  curr->data  << "\t";
+            cout <<  curr->data  << " ";
             curr = curr->next;
         }
     }
